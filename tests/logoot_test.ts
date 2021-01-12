@@ -15,7 +15,6 @@ Deno.test({
   name: "Logoot insert",
   async fn() {
     await makeDocuments(2, async ([doc1, doc2]) => {
-      console.log("");
       doc1.insert("abc", 0);
       doc2.insert("xyz", 0);
       doc1.insert("123", 1);
